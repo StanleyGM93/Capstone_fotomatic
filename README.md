@@ -1,4 +1,7 @@
-# [Fotomatic] (https://stanleygm93.github.io/Capstone_fotomatic/)
+# Fotomatic
+
+## Link to project
+[Link to work in progress](https://stanleygm93.github.io/Capstone_fotomatic/)
 
 ## Purpose
 The Fotomatic webpage needs to be styled in a responsive way so that it is easily accessible on all devices. This will include media queries and other key accessibility features. The project is aimed to improve my ability to use dev tools and fix bugs that have occured in the code. 
