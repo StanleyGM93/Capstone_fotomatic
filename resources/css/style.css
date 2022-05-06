@@ -58,7 +58,7 @@ header .logo {
 }
 
 nav.desktop {
-  inset-inline-end: 0;
+  margin-inline-start: auto;
 }
 
 header nav ul {
