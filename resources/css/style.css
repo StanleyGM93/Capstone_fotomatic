@@ -47,7 +47,8 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  padding-inline: 1.875rem;
+  padding-inline-start: 1.875rem;
+  padding-inline-end: 1.875rem;
   padding-block-start: 1.125rem;
   padding-block-end: 1.875rem;
 }
@@ -64,6 +65,7 @@ nav.desktop {
 header nav ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 nav li {
@@ -75,6 +77,9 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  display: inline-block;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
 }
 
 header .logo:hover,
@@ -87,14 +92,28 @@ header .icon {
   padding-left: .75rem;
 }
 
-header .mobile {
+header .mobile,
+header .button {
   display: none;
 }
 
+@media only screen and (min-width: 891px) {
+  header .tablet {
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 890px) {
-  .tablet,
   header .button {
     display: inline-block;
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+
+  nav li {
+    padding-inline-start: 2rem;
   }
 }
 
@@ -115,20 +134,12 @@ header .mobile {
   header .mobile ul {
     display: flex;
     justify-content: space-around;
-    align-items:  baseline;
+    align-items:  stretch;
     width: 100%;
   }
 
   header .mobile li {
     padding: 0;
-  }
-
-  header .mobile .button {
-    display: inline-block;
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
   }
 }
 
