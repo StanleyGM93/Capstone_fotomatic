@@ -336,6 +336,9 @@ header .mobile {
 
   #filters-section .images-container {
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   #filters-section .extra {
