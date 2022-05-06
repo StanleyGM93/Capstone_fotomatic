@@ -25,7 +25,8 @@ html {
 }
 
 .image-container img {
-  display: block;
+  display: inline-block;
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -270,6 +271,15 @@ header .mobile {
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+  }
+
+  .feature h2 {
+    margin-block-start: 1rem;
+  }
+
+  .feature h3 {
+    margin-inline: 2rem;
+    margin-block-end: 1rem;
   }
 }
 
