@@ -148,7 +148,7 @@ header .button {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
   background-image: url(../images/banner-landingpage.jpg);
   background-repeat: no-repeat;
@@ -161,6 +161,7 @@ header .button {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-inline-start: 100px;
 }
 
 #sign-up-cta .content {
@@ -198,7 +199,7 @@ header .button {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -342,9 +343,12 @@ header .button {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -367,11 +371,11 @@ header .button {
 
   #filters-section .images-container {
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
 
+  }
+}
+
+@media only screen and (max-width: 760px) {
   #filters-section .extra {
     display: none;
   }
