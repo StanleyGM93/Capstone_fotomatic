@@ -38,6 +38,7 @@ html {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
@@ -49,7 +50,7 @@ header .content {
   padding-inline-start: 1.875rem;
   padding-inline-end: 1.875rem;
   padding-block-start: 1.125rem;
-  padding-block-end: 1.875rem;
+  padding-block-end: 1.25rem;
 }
 
 header .logo {
@@ -97,12 +98,16 @@ header .button {
 }
 
 @media only screen and (min-width: 891px) {
-  header .tablet {
+   header .tablet {
     padding: 0;
   }
 }
 
 @media only screen and (max-width: 890px) {
+  header {
+    z-index: unset;
+  }
+  
   header .button {
     display: inline-block;
     padding: .1875rem .5rem;
